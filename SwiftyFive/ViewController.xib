@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SwiftyFive" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="co4-5W-mfy" id="wF3-rG-h9K"/>
+                <outlet property="party" destination="SIC-WH-mw9" id="UuH-aX-sGM"/>
+                <outlet property="textField" destination="B4i-22-Pgi" id="cSq-pR-BT0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="7pf-yU-1ba"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="182" translatesAutoresizingMaskIntoConstraints="NO" id="co4-5W-mfy">
+                    <rect key="frame" x="69" y="31" width="182" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="HfT-YG-2hM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-22-Pgi">
+                    <rect key="frame" x="69" y="95" width="182" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIC-WH-mw9">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="trailing" secondItem="co4-5W-mfy" secondAttribute="trailing" id="DO9-Xb-ugq"/>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="top" secondItem="co4-5W-mfy" secondAttribute="bottom" constant="8" symbolic="YES" id="HKU-87-MqG"/>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KH8-Db-STw"/>
+                <constraint firstItem="SIC-WH-mw9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="Ota-6D-pJP"/>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="SED-Xg-fA4"/>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="leading" secondItem="co4-5W-mfy" secondAttribute="leading" id="aNu-E2-VkO"/>
+                <constraint firstItem="co4-5W-mfy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="cbG-CA-ggJ"/>
+                <constraint firstItem="B4i-22-Pgi" firstAttribute="leading" secondItem="SIC-WH-mw9" secondAttribute="leading" id="y3d-Ud-hBo"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
