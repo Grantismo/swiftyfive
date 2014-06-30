@@ -34,7 +34,7 @@ class MustacheTemplate{
             
             let key = (renderString as NSString).substringWithRange(keyRange)
             if let val = object[key]{
-                startIndex += bracketsRange.location + countElements(val)
+                startIndex = bracketsRange.location + countElements(val)
                 renderString = (renderString as NSString).stringByReplacingCharactersInRange(bracketsRange, withString: val) as String
             }else{
                 startIndex += bracketsRange.location + bracketsRange.length
